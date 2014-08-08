@@ -1,0 +1,11 @@
+set terminal postscript eps color
+set output "sen1.eps"
+set xrange [19:100]
+set xlabel 'Segment number(N)' font "Times-Roman, 24"
+set ylabel 'Time(ms)' font "Times-Roman, 24"
+set xtics font "Times-Roman, 24"
+set ytics font "Times-Roman, 24"
+set label 'k=18' at 80,8 font "Times-Roman,24"
+plot "data1.txt" using 1:2 notitle with linespoints lc rgb 'red' pt 4
+set output
+set term 'windows'

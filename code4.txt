@@ -1,0 +1,11 @@
+set terminal postscript eps color
+set output "sen4.eps"
+set xrange [9:50]
+set xlabel 'Cluster number(k)' font "Times-Roman, 24"
+set ylabel 'Quality' font "Times-Roman, 24"
+set xtics font "Times-Roman, 24"
+set ytics font "Times-Roman, 24"
+set label 'N=54' at 40,52 font "Times-Roman,24"
+plot "data2.txt" using 1:3 notitle with linespoints lc rgb 'red' pt 3
+set output
+set term 'windows'
